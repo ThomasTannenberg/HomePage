@@ -5,7 +5,7 @@
   box-sizing: border-box;
   font-size: 20px;
   font-weight: 900;
-  -webkit-text-stroke: 0.45px #0d71b2;
+  
 }
 
 body{
@@ -483,7 +483,7 @@ nav .fa-solid{
 
 @media only screen and (max-width: 600px){
   #header{
-    background-image: url(pics/background_2.jpg);
+    background-image: url(pics/phone_background_2.jpg);
   }
   .header-text{
     margin-top: 100%;
@@ -491,6 +491,12 @@ nav .fa-solid{
   }
   .header-text h1{
     font-size: 30px;
+  }
+
+  .header-text h1 span{
+    color: #0d71b2;
+    font-size: 30px;
+    
   }
   nav .fa-solid{
     display: block;
