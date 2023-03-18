@@ -1,285 +1,239 @@
 *{
   margin: 0;
   padding: 0;
-  font-family: Calibri, sans-serif;
+  font-family: Calibri;
   box-sizing: border-box;
-  font-size: 20px;
+  font-size: 25px;
   font-weight: 900;
-  
 }
-
+/*-------Allgemeiner Hintergrund Anfang---------*/
 body{
-  background: black;
-  color: white;
+background: rgb(0,0,0);
+background: radial-gradient(circle, rgba(0,0,0,1) 38%, rgba(15,23,232,0.8720354352678572) 100%, rgba(0,0,0,1) 100%); 
 }
-
+/*-------Allgemeiner Hintergrund Ende---------*/
+/*-------Menu und Titel Anfang---------*/
 #header{
   width: 100%;
   height: 100vh;
-  background-image: url(pics/background_5.jpg);
+  background-image: url(pictures/background_oben.jpg);
   background-size: cover;
   background-position: center;
 }
-
-.container{
-  padding: 10px 10%;
+.containerTop{
+  background-image: url(pictures/profil_1.png);
+  background-size: contain;
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
 }
-
+.logoCopyRight{
+  width: 300px;
+  height: auto;
+}
+.logoCopyRight img{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
 nav{
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
-  font-size: 10px;
 }
-
-.logo{
-  width: 140px;
-  margin: 10px;
-}
-
 nav ul li{
   display: inline-block;
   list-style: none;
   margin: 10px 20px;
 }
-
 nav ul li a{
   color: white;
   text-decoration: none;
-  font-size: 30px;
+  font-size: 35px;
   position: relative;
+  text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
 }
-
 nav ul li a::after{
   content: '';
   width: 0;
   height: 10px;
-  background: #0d71b2;
+  background: white;
   position: absolute;
   left: 0;
   bottom: -6px;
-  transition: 0.5s;
+  transition: 1s;
 }
-
 nav ul li a:hover::after{
   width: 100%;
 }
-
-.header-text{
+/*-------Menu und Titel Ende---------*/
+/*-------Titel Anfang---------*/
+.headerText{
   margin-top: 20%;
-  font-size: 40px;
-  letter-spacing: 2px;
-  
+  color: white;
 }
-
-.header-text h1{
+.headerText h1{
   font-size: 80px;
   margin-top: 20px;
   background: #0d71b2;
-  width: 900px;
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
-  -webkit-text-stroke: 2px #0d71b2;
+  color: white;
+  width: 850px;
+  border-radius: 10px;
+  text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
 }
-
-.header-text h1 span{
+.headerText h1 span{
   color: #0d71b2;
+  background-color: #0b385f;
   font-size: 78px;
-  -webkit-text-stroke: 2px white;
-
+  text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
 }
-
-/*-------Profil---------*/
-
+/*-------Titel Ende---------*/
+/*-------Profil Anfang---------*/
 #profil{
-  padding: 80px 0 0;
-  color: #0d71b2;
-  background-image: url();
-  background-size: cover;
-  background-position: center;
-  
+  padding: 20px 0 0;
+  color: white;
+}
+.container{
+    padding: 100px 5px;
 }
 .row{
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-wrap: wrap;
 }
-
 .profil-col-1{
-  flex-basis: 40%;
+  flex-basis: 20%;
 }
 .profil-col-1 img{
-  width: 55%;
+  width: 85%;
   border-radius: 15px;  
-}
-
+} 
 .profil-col-2 p{
-  border-radius: 15px;  
-}
-
-
-.profil-col-2{
-flex-basis: 60%;
-}
-
-.subtitle{
-  font-size: 60px;
-  font-weight: 600;
-  color: white;
-}
-
-.tab-titles{
-  display: flex;
-  margin: 20px 0 40px;
-  background: none;
-}
-
-.tab-links{
-  margin-right: 50px;
-  font-size: 30px;
-  font-weight: 500;
-  cursor: pointer;
-  position: relative;
-  color: white;
-}
-
-.tab-links::after{
-  content: '';
-  width: 0;
-  height: 3px;
-  background: #0d71b2;
-  position: absolute;
-  left: 0;
-  bottom: -8px;
-  transition: 0.5s;
-}
-
-.tab-links.active-link::after{
-  width: 50%;
-}
-
-.tab-content ul li{
-  list-style: none;
-  margin: 10px 0;
-}
-
-.tab-content ul li span{
-  color: white;
-  font-size: 25px;
-  
-}
-
-.tab-content{
-  display: none;
-}
-
-.tab-content.active-tab{
-  display: block;
-}
-
-/*-------Umschulung---------*/
-
-#umschulung{
-  padding: 30px 0;
   color: #0d71b2;
-  background-image: url();
-  background-size: cover;
-  background-position: center;
-  height: 1000px;
 }
-
-.subtitle2{
-  font-size: 60px;
+.profil-col-2{
+  flex-basis: 60%;
+  }
+  .subtitle{
+    font-size: 60px;
+  }
+  .tab-titles{
+    display: flex;
+    margin: 20px 0 40px;
+    background: none;
+  }
+  .tab-titles p{
+    color: white;
+  }
+  .tab-links{
+    margin-right: 50px;
+    font-size: 30px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+  }
+  .tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #0d71b2;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+  }
+  .tab-links.active-link::after{
+    width: 50%;
+  }
+  .tab-content ul li{
+    list-style: none;
+    margin: 10px 0;
+  }
+  .tab-content ul li span{
+    color: #0d71b2;
+  }
+  .tab-content ul li span2{
+    color: white;
+  }
+  .tab-content{
+    display: none;
+  }
+  .tab-content.active-tab{
+    display: block;
+  }
+  /*-------Profil Ende---------*/
+  /*-------Umschulung Anfang---------*/
+  #umschulung{
+    padding: 30px 0;
+    color: white;
+  }
+  .subtitle2{
+    font-size: 60px;
+  }
+  .container2 p{
+    color: #0d71b2;
+  }
+  .umschulung-liste{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+    list-style: none;
+  }
+  .umschulung-liste div{
+    background: #0d71b2;
+    padding: 25px;
+    border-radius: 10px;
+    transition: background 0.5s, transform 0.5s;
+  }
+  .umschulung-liste div i{
+    margin-bottom: 30px;
+  }
+  .umschulung-liste div h2{
+    font-size: 30px;
+    margin-bottom: 25px;
+  }
+  .umschulung-liste div u{
+    font-size: 20px;
+    font-weight: 500;
+    margin: 30px 0 10px;
+    text-align:justify;
+    display: inline-block;
+    text-decoration: none;
+  }
+  .umschulung-liste div:hover{
+    background: #0b385f;
+    transform: translateY(-10px);
+  }
+ /*-------Umschulung Ende---------*/
+ /*-------Weiterbildung Anfang---------*/
+ #Weiterbild{
+  padding: 20px 0;
   color: white;
-  font-weight: 600;
- }
-
-.umschulung-liste{
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  grid-gap: 40px;
-  margin-top: 50px;
-  color: white;
 }
-
-.umschulung-liste div{
-  background: #0d71b2;
-  padding: 40px;
-  font-size: 14px;
-  font-weight: 300;
-  border-radius: 10px;
-  transition: background 0.5s, transform 0.5s;
-}
-
-.umschulung-liste div i{
-  font-size: 35px;
-  margin-bottom: 30px;
-}
-
-.umschulung-liste div h2{
-  font-size: 35px;
-  font-weight: 500;
-  margin-bottom: 15px;
-}
-
-.umschulung-liste div a{
-  text-decoration: none;
-  color: white;
-  font-size: 14px;
-  margin-top: 20px;
-  display:inline-block;
-}
-
-.umschulung-liste div u{
-  font-size: 20px;
-  font-weight: 500;
-  margin: 30px 0 10px;
-  padding: 10px 0;
-  display: inline-block;
-  text-decoration: dashed;
-}
-
-.umschulung-liste div:hover{
-  background: #032936;
-  transform: translateY(-10px);
-}
-
-
-/*-------Weiterbildungen---------*/
-#Weiterbild{
-  padding: 50px 0;
-  background-image: url();
-  background-size: cover;
-  background-position: center;
-  
-}
-
 .work-list{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   grid-gap: 40px;
   margin-top: 50px;
 }
-
 .work{
   border-radius: 10px;
   position: relative;
   overflow: hidden;
   color: white;
   font-size: 30px;
-  font-weight: 500;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
-
 .work img{
   width: 100%;
-  height: 400px;
+  height: 600px;
   border-radius: 10px;
   display: block;
   transition: 1s;
 }
-
 .layer{
   width: 100%;
   height: 100%;
@@ -297,14 +251,19 @@ flex-basis: 60%;
   padding: 0 40px;
   text-align: center;
 }
-
 .layer h3{
+  font-size: 55px;
   font-weight: 500;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+  text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
 }
-
+.layer p{
+font-size: 30px;
+margin-bottom: 10px;
+text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+}
 .layer a{
-  margin-top: 20px;
+  margin-top: 10px;
   color: white;
   text-decoration: none;
   font-size: 18px;
@@ -315,15 +274,12 @@ flex-basis: 60%;
   text-align: center;
   background:#0d71b2;
 }
-
 .work:hover img{
-transform: scale(1.2);
+  transform: scale(1.2);
 }
-
 .work:hover .layer{
   opacity: 100%;
 }
-
 .btn {
   display: block;
   margin: 50px auto;
@@ -336,73 +292,24 @@ transform: scale(1.2);
   font-size: 25px;
   transition: 0.5s;
 }
-
 .btn:hover{
   background: #0d71b2;
 }
-
-/*-------Kontakt---------*/
-.contact-left{
-  flex-basis: 35%;
-  color: white;
-  font-size: 25px;
-}
-
-.contact-right{
-  flex-basis: 60%;
-}
-
-.contact-left p{
-  margin-top: 30px;
-}
-
-.contact-left p i{
-  color: #0d71b2;
-  margin-right: 15px;
-  font-size: 30px;
-}
-
-.social-icons{
-  margin-top: 30px;
-}
-
-.social-icons a{
-  text-decoration: none;
-  font-size: 30px;
-  margin-right: 15px;
-  display: inline-block;
-  color: #032936;
-  transition: 0.5s;
-}
-
-.social-icons a:hover{
-  color: #0d71b2;
-  transform: translateY(-5px);
-}
-
-.btn.btn2{
-  display: inline-block;
-  background: #0d71b2;
-}
-/*-------Float down Info Weiterbildungen---------*/
+ /*-------Weiterbildung Ende---------*/  
+/*-------Info Weiterbildung Anfang---------*/
 #panel{
   visibility: hidden;
   height: 0;
   width: 0;
 }
-
 .box{
   width: 100%;
-  height: 100vh;
-  background: #0d71b2;
   display: flex;
-  align-items: center;
-  justify-content: center;
 }
-
 .btn3{
   padding: 10px 60px;
   background: white;
+  color: #0d71b2;
   border: 1;
   outline: none;
   cursor: pointer;
@@ -411,7 +318,6 @@ transform: scale(1.2);
   border-radius: 30px;
   box-shadow: 0 5px 5px rgba(0,0,0,0.2);
 }
-
 .popup{
   width: 500px;
   background: #0d71b2;
@@ -426,122 +332,82 @@ transform: scale(1.2);
   visibility: hidden;
   transition: 0.6s;
 }
-
 .open-popup{
-  visibility: visible;
-  
+  visibility: visible;  
   transform: translate(-50%, 360%) scale(1);
 }
-
 .popup img{
   width: 150px;
   margin-top: -50px;
   border-radius: 50%;
   box-shadow: 0 5px 5px rgba(0,0,0,0.2);
 }
-
 .popup h4{
   font-size: 30px;
   font-weight: 500;
   margin: 30px 0 10px;
   text-decoration: none;
 }
-
 .popup u li{
-  font-size: 20px;
-  font-weight: 500;
+  font-size: 25px;
   margin: 15px 0 5px;
   padding: 5px 0;
   list-style: none;
   display:inline-block;
+  text-decoration: none;
 }
-
-/*-------Footer---------*/
-.copyright{
-  width: 100%;
-  text-align: center;
-  padding: 125px 0;
-  border-radius: 10px;
+/*-------Info Weiterbildung Ende---------*/
+/*-------Kontank Anfang---------*/
+#neuerKontakt{
+color: #0d71b2;
+text-align: center;
+align-items: center;
+justify-content: center;
+}
+#neuerKontakt .forScale{
+background-image: url(pictures/contact3.jpg);
+background-repeat: no-repeat;
+border-radius: 10px;
+background-size: cover;
+background-position: center;
+transition: 2s;
+}
+.forScale:hover{
+  transform: scale(1.4);
+}
+.contact .content h4{
   color: white;
-  background: #0d71b2;
-  margin-top: 20px;
-  font-size: 30px;
-  background-image: url();
-  background-size: cover;
-  background-position: center;
-  
+  font-size: 70px;
+  text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
 }
-
+.contact .container3 .contactInfo .box2 .icon{
+  color: white;
+  text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+}
+.contact .container3 .contactInfo .box2 .text h6{
+font-size: 40px;
+color: white;
+text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+ }
+ .contact .container3 .contactInfo .box2 .text h7{
+  font-size: 40px;
+  color: white;
+  text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+} 
+.btn.btn2{
+  display: inline-block;
+  background: #0d71b2;
+}
+/*-------Kontankt Ende---------*/  
+/*-------Footer---------*/ 
+.copyright{
+  text-align: center;
+}
 .copyright i{
+  text-align: center;
   color: red;
   font-size: 30px;
+  align-items: center;
+  border-radius: 50%;
 }
-/*-------css for small screens---------*/
-nav .fa-solid{
-  display: none;
-}
-
-@media only screen and (max-width: 600px){
-  #header{
-    background-image: url(pics/phone_background_2.jpg);
-  }
-  .header-text{
-    margin-top: 100%;
-    font-size: 16px;
-  }
-  .header-text h1{
-    font-size: 30px;
-  }
-
-  .header-text h1 span{
-    color: #0d71b2;
-    font-size: 30px;
-    
-  }
-  nav .fa-solid{
-    display: block;
-    font-size: 25px;
-  }
-  nav ul{
-    background: #0d71b2;
-    position: fixed;
-    top: 0;
-    right: -200px;
-    width: 200px;
-    height: 100vh;
-    padding-top: 50px;
-    z-index: 2;
-    transition: 1s;
-    }
-  nav ul li{
-    display: block;
-    margin: 25px;
-  }
-  nav ul .fa-solid{
-    position: absolute;
-    top: 25px;
-    left: 25px;
-    cursor: pointer;
-  }
-  .subtitle{
-    font-size: 40px;
-  }
-  .profil-col-1, .profil-col-2{
-    flex-basis: 100%;
-  }
-  .profil-col-1{
-    margin-bottom: 25px;
-  }
-  .profil-col-2{
-    font-size: 14px;
-  }
-  .tab-links{
-    font-size: 15px;
-    margin-right: 11px;
-  }
-  .contact-left, .contact-right{
-    flex-basis: 100%;
-  }
-  .btn.btn2{
-    display: flex;
-  }}
+/*-------Footer---------*/ 

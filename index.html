@@ -1,280 +1,278 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Persönliche Seite von Thomas Tannenberg (SPA)</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/a043229ba3.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thomas Tannenberg Profil - SPA</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/a043229ba3.js" crossorigin="anonymous"></script>
 </head>
 <body>
+<!-------------------Menu und Titel Anfang--------------------->
 <div id="header">
-    <div class="container"></div>
-        <nav>
-            <img src="pics/logo2.png" class="logo">
-            <ul id="sidemenu">
-                <li><a href="#header">Home</a></li>
-                <li><a href="#profil">Profil</a></li>
-                <li><a href="#umschulung">Umschulung</a></li>
-                <li><a href="#Weiterbild">Weiterbildungen</a></li>
-                <li><a href="#contact">Download</a></li>
-                <li><a href="#contact">Kontakt</a></li>
-                <li><a href="Gallery/index_galerie.html">Bilder</a></li>
-                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
-            </ul>
-            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
-        </nav>
-        <div class="header-text">
-            <p>Fachinformatiker Anwendungsentwicklung  (IHK)</p>
-            <h1><span>Guten Tag:</span> Mein Name <br> ist Thomas&nbsp;Tannenberg</h1>
-        </div>
+  <div class="containerTop">
+    <nav>
+      <ul>
+        <li><a href="#header">Home</a></li>
+        <li><a href="#profil">Profil</a></li>
+        <li><a href="#umschulung">Umschulung</a></li>
+        <li><a href="#Weiterbild">Weiterbildungen</a></li>
+        <li><a href="#neuerKontakt">Download</a></li>
+        <li><a href="#neuerKontakt">Kontakt</a></li>
+        <li><a href="Gallery/index_galerie.html">Bilder</a></li>
+      </ul>
+    </nav>
+    <div class="headerText">
+      <p>Fachinformatiker Anwendungsentwicklung (IHK)</p>
+      <h1><span>Guten Tag:</span> Mein Name<br>ist Thomas&nbsp;Tannenberg</h1>
+  </div>
+<div class="logoCopyRight">
+<img src="pictures/logo2.png">
+  </div>
 </div>
-
-<!-------------------Profil--------------------->
+</div>
+<!-------------------Menu und Titel Ende--------------------->
+<!-------------------Profil Anfang--------------------->
 <div id="profil">
-    <div class="container">
-        <div class="row">
-            <div class="profil-col-1">
-                <img src="pics/Profil_2.jpg">
-            </div> 
-            <div class="profil-col-2"> 
-                <h1 class="subtitle">Profil</h1>
-                <p>Mich fasziniert sowohl die Welt der Elektronen, Neutronen und Protonen als auch die Welt der Nullen und Einsen. Beide Welten unterliegen streng logischen Abläufen und haben mehr gemeinsam als es auf den ersten Blick scheint. </p>
+  <div class="container">
+      <div class="row">
+          <div class="profil-col-1">
+              <img src="pictures/Profil_2.jpg">
+          </div> 
+          <div class="profil-col-2"> 
+              <h1 class="subtitle">Profil</h1>
+              <p>Mich fasziniert sowohl die Welt der Elektronen, Neutronen und Protonen als auch die Welt der Nullen und Einsen.<br>Beide Welten unterliegen streng logischen Abläufen und haben mehr gemeinsam als es auf den ersten Blick scheint. </p>
 
-                <div class="tab-titles">
-                    <p class="tab-links active-link" onclick="opentab('Softskills')">Softskills</p>
-                    <p class="tab-links" onclick="opentab('Sprachkenntnisse')">Sprachkenntnisse</p>
-                    <p class="tab-links" onclick="opentab('Aktuell')">Aktuell</p>
-                    <p class="tab-links" onclick="opentab('Ausbildung')">Ausbildung</p>
-                    <p class="tab-links" onclick="opentab('IT-Skills')">IT</p>
-                    <p class="tab-links" onclick="opentab('Qualifikationen')">Qualifikationen</p>
-                </div>
-                <div class="tab-content" id="Sprachkenntnisse">
-                    <ul>
-                        <li><span>Englisch</span><br>C1</li>
-                        <li><span>Französisch</span><br>A2</li>
-                        <li><span>Polnisch</span><br>Muttersprache</li>
-                        <li><span>Deutsch</span><br>Muttersprache</li>
-                    </ul>
-                </div>
-                <div class="tab-content active-tab" id="Softskills">
-                    <ul>
-                        <li><span>Probleme lösen</span><br>Komplexe Problemstellungen verstehen und kreative Lösungsfindung.</li>
-                        <li><span>Teamplayer</span><br>Fähigkeit zur Kommunikation, zum Zuhören und einer guten Zusammenarbeit in der Gruppe.</li>
-                        <li><span>Verantwortungsbewusstsein</span><br>Verantwortung für meine Aufgabenbereiche und für andere Mitarbeiter übernehmen.</li>
-                    </ul>
-                </div>
-                <div class="tab-content" id="Aktuell">
-                    <ul>
-                        <li><span>01/2023 bis 02/2025<br>Fachinformatiker Anwendungsentwicklung (IHK)</span><br>Umschulung</li>
-                        <li><span>12/2022 bis 06/2023<br>Java Programming 1 & 2<br>Python Programming</span><br>University of Helsinki</li>
-                        <li><span>03/2023 bis 03/2023<br>HTML, CSS, and Javascript for Web Developers</span><br>John Hopkins University</li>
-                    </ul>
-                </div>
-                <div class="tab-content" id="Ausbildung">
-                    <ul>
-                        <li><span>03/2006 bis 04/2011<br>Studium der Chemischen Technik</span><br>Hochschule Mannheim<br>Kein Abschluss</li>
-                        <li><span>03/2002 bis 03/2006<br>Studium der Chemie, Geschichte<br>und Philosophie auf Lehramt</span><br>Universität Heidelberg<br>Kein Abschluss</li>                        
-                        <li><span>03/2002<br>Allgemeine Hochschulereife</span><br>Carl-Bosch-Gymnasium</li>
-                    </ul>
-                </div>
-                <div class="tab-content" id="IT-Skills">
-                    <ul>
-                        <li><span>Java</span><br><img src="pics/IT_balken.png"></li>
-                        <li><span>Python</span><br><img src="pics/IT_balken.png"></li>
-                        <li><span>HTML</span><br><img src="pics/IT_balken.png"></li>
-                        <li><span>CSS</span><br><img src="pics/IT_balken.png"></li>
-                        <li><span>Javascript</span><br><img src="pics/IT_balken.png"></li>
-                        <li><span>PC-Systeme</span><br><img src="pics/Good_balken.png"></li>
-                        <li><span>Office</span><br><img src="pics/Good_balken.png"></li>
-                    </ul>
-                </div>
-                <div class="tab-content" id="Qualifikationen">
-                    <ul>
-                        <li><span>Verfahrenstechnik</span><br><img src="pics/Good_balken.png"></li>
-                        <li><span>Chemie</span><br><img src="pics/Good_balken.png"></li>
-                        <li><span>Pädagogik</span><br><img src="pics/Good_balken.png"></li>
-                        <li><span>Mathematik</span><br><img src="pics/Good_balken.png"></li>
-                        <li><span>Analysetechnikent</span><br><img src="pics/Good_balken.png"></li>
-                    </ul>
-                </div>
-           </div> 
-        </div>
-    </div>
+              <div class="tab-titles">
+                  <p class="tab-links active-link" onclick="opentab('Softskills')">Softskills</p>
+                  <p class="tab-links" onclick="opentab('Sprachkenntnisse')">Sprachkenntnisse</p>
+                  <p class="tab-links" onclick="opentab('Aktuell')">Aktuell</p>
+                  <p class="tab-links" onclick="opentab('Ausbildung')">Ausbildung</p>
+                  <p class="tab-links" onclick="opentab('IT-Skills')">IT</p>
+                  <p class="tab-links" onclick="opentab('Qualifikationen')">Qualifikationen</p>
+              </div>
+              <div class="tab-content" id="Sprachkenntnisse">
+                  <ul>
+                      <li><span>Englisch</span><br>C1</li>
+                      <li><span>Französisch</span><br>A2</li>
+                      <li><span>Polnisch</span><br>Muttersprache</li>
+                      <li><span>Deutsch</span><br>Muttersprache</li>
+                  </ul>
+              </div>
+              <div class="tab-content active-tab" id="Softskills">
+                  <ul>
+                      <li><span>Probleme lösen</span><br>Komplexe Problemstellungen verstehen und kreative Lösungsfindung.</li>
+                      <li><span>Teamplayer</span><br>Fähigkeit zur Kommunikation, zum Zuhören und einer guten Zusammenarbeit in der Gruppe.</li>
+                      <li><span>Verantwortungsbewusstsein</span><br>Verantwortung für meine Aufgabenbereiche und für andere Mitarbeiter übernehmen.</li>
+                  </ul>
+              </div>
+              <div class="tab-content" id="Aktuell">
+                  <ul>
+                      <li><span>01/2023 bis 02/2025</span><br>Fachinformatiker Anwendungsentwicklung (IHK)<br>Umschulung</li>
+                      <li><span>12/2022 bis 06/2023</span><br>Java Programming 1&amp;2<br>Python Programming<br>University of Helsinki</li>
+                      <li><span>03/2023 bis 03/2023</span><br>HTML, CSS, and Javascript for Web Developers<br>John Hopkins University</li>
+                  </ul>
+              </div>
+              <div class="tab-content" id="Ausbildung">
+                  <ul>
+                      <li><span>03/2006 bis 04/2011</span><br>Studium der Chemischen Technik<br>Hochschule Mannheim<br>Kein Abschluss</li>
+                      <li><span>03/2002 bis 03/2006</span><br>Studium der Chemie, Geschichte<br>und Philosophie auf Lehramt<br>Universität Heidelberg<br>Kein Abschluss</li>                        
+                      <li><span>03/2002</span><br>Allgemeine Hochschulereife<br>Carl-Bosch-Gymnasium</li>
+                  </ul>
+              </div>
+              <div class="tab-content" id="IT-Skills">
+                  <ul>
+                      <li><span2>Java</span2><br><img src="pictures/Balken_gut.png"></li>
+                      <li><span2>Python</span2><br><img src="pictures/Balken_gut.png"></li>
+                      <li><span2>HTML</span2><br><img src="pictures/Balken_gut.png"></li>
+                      <li><span2>CSS</span2><br><img src="pictures/Balken_gut.png"></li>
+                      <li><span2>Javascript</span2><br><img src="pictures/Balken_gut.png"></li>
+                      <li><span2>PC-Systeme</span2><br><img src="pictures/Balken_sehr_gut.png"></li>
+                      <li><span2>Office</span2><br><img src="pictures/Balken_sehr_gut.png"></li>
+                  </ul>
+              </div>
+              <div class="tab-content" id="Qualifikationen">
+                  <ul>
+                      <li><span2>Verfahrenstechnik</span2><br><img src="pictures/Balken_sehr_gut.png"></li>
+                      <li><span2>Chemie</span2><br><img src="pictures/Balken_sehr_gut.png"></li>
+                      <li><span2>Pädagogik</span2><br><img src="pictures/Balken_sehr_gut.png"></li>
+                      <li><span2>Mathematik</span2><br><img src="pictures/Balken_sehr_gut.png"></li>
+                      <li><span2>Analysetechnikent</span2><br><img src="pictures/Balken_sehr_gut.png"></li>
+                  </ul>
+              </div>
+         </div> 
+      </div>
+  </div>
 </div>
-<!-----------------Umschulung--------------------->
+<!-------------------Profil Ende--------------------->
+<!-----------------Umschulung Anfang--------------------->
 <div id="umschulung">
-   <div class="container">
-        <h1 class="subtitle2">Umschulung <br> Fachinformatiker</h1>
-            <p>GFN GmbH Mannheim</p>
-        <div class="umschulung-liste">
-            <div>
-                <i class="fa-solid fa-code-compare"></i>
-                <h2>Kernqualifikationen</h2>
-                <u>
-                    <li>Das Unternehmen und die eigene Rolle im Betrieb</li>
-                    <li>Arbeitsplatz nach Kundenwunsch ausstatten</li>
-                    <li>Clients in Netzwerke einbinden</li>
-                    <li>Schutzbedarfsanalyse im eigenen Arbeitsbereich durchführen</li>
-                    <li>Software zur VerwaWltung von Daten anpassen</li>
-                    <li>Serviceanfragen bearbeiten</li>
-                    <li>Cyber-physische Systeme ergänzen</li>
-                    <li>Daten systemübergreifend bereitstellen</li>
-                    <li>Netzwerke und Dienste bereitstellen</li>
-                    <li>Einführung in das Projektmanagement</li>
-                    <li>Office Management</li>
-                </u>
-            </div>
-            <div>
-                <i class="fa-solid fa-code-branch"></i>
-                <h2>Fachqualifikationen</h2>
-                <u>
-                    <li>Benutzerschnittstellen gestalten und entwickeln</li>
-                    <li>Funktionalität in Anwendungen realisieren</li>
-                    <li>Kundenspezifische Anwendungsentwicklung durchführen</li>
-                    <li>Datenbanken & SQL, Python, HTML/CS</li>
-                </u>
-            </div>
-            <div>
-                <i class="fa-solid fa-code-pull-request"></i>
-                <h2>Zusatzqualifikationen</h2>
-                <u>
-                    <li>Oracle Certified Associate Java (OCA) mit Zertifizierung</li>
-                    <li>Agile SCRUM Master mit Zertifizierung</li>
-                </u>
+  <div class="container2">
+       <h1 class="subtitle2">Umschulung <br> Fachinformatiker</h1>
+           <p>GFN GmbH Mannheim</p>
+       <div class="umschulung-liste">
+           <div>
+               <i class="fa-solid fa-code-compare"></i>
+               <h2>Kernqualifikationen</h2>
+               <u>
+                   <li>Das Unternehmen und die eigene Rolle im Betrieb</li>
+                   <li>Arbeitsplatz nach Kundenwunsch ausstatten</li>
+                   <li>Clients in Netzwerke einbinden</li>
+                   <li>Schutzbedarfsanalyse im eigenen Arbeitsbereich durchführen</li>
+                   <li>Software zur VerwaWltung von Daten anpassen</li>
+                   <li>Serviceanfragen bearbeiten</li>
+                   <li>Cyber-physische Systeme ergänzen</li>
+                   <li>Daten systemübergreifend bereitstellen</li>
+                   <li>Netzwerke und Dienste bereitstellen</li>
+                   <li>Einführung in das Projektmanagement</li>
+                   <li>Office Management</li>
+               </u>
+           </div>
+           <div>
+               <i class="fa-solid fa-code-branch"></i>
+               <h2>Fachqualifikationen</h2>
+               <u>
+                   <li>Benutzerschnittstellen gestalten und entwickeln</li>
+                   <li>Funktionalität in Anwendungen realisieren</li>
+                   <li>Kundenspezifische Anwendungsentwicklung durchführen</li>
+                   <li>Datenbanken & SQL, Python, HTML/CS</li>
+               </u>
+           </div>
+           <div>
+               <i class="fa-solid fa-code-pull-request"></i>
+               <h2>Zusatzqualifikationen</h2>
+               <u>
+                   <li>Oracle Certified Associate Java (OCA) mit Zertifizierung</li>
+                   <li>Agile SCRUM Master mit Zertifizierung</li>
+               </u>
 
-            </div>
-        </div>
-   </h1> 
+           </div>
+       </div>
+  </h1> 
 </div>
-<!-------------------Weiterbildungen--------------------->
+<!-----------------Umschulung Ende--------------------->
+<!-------------------Weiterbildung Anfang--------------------->
 <div id="Weiterbild">
-    <div class="container">
-        <h1 class="subtitle">Weiterbildungen</h1>
-        <div class="work-list">
-            <div class="work">
-                <img src="pics/java_code.jpg">
-                <div class="layer">
-                    <h3>Java</h3>
-                    <p>Java Programming 1 &amp; 2 <br> University of Helsinki</p>
-                    <a href="Downloads/certificate-java-programming-i.png" download><i class="fa-solid fa-graduation-cap"></i></a>
-                    <p>Zertifikat</p>
+  <div class="container">
+      <h1 class="subtitle">Weiterbildungen</h1>
+      <div class="work-list">
+          <div class="work">
+              <img src="pictures/Java.png">
+              <div class="layer">
+                  <h3>Java</h3>
+                  <p>Java Programming 1 &amp; 2 <br> University of Helsinki</p>
+                  <a href="Downloads/certificate-java-programming-i.png" download><i class="fa-solid fa-graduation-cap"></i></a>
+                  <p>runterladen</p>
+              </div>
+          </div>
+          <div class="work">
+              <img src="pictures/python.png">
+              <div class="layer">
+                  <h3>Python</h3>
+                  <p>Python Programming <br> University of Helsinki</p>
+                  <a href="#Weiterbild"><i class="fa-solid fa-graduation-cap"></i></i></a>
+              </div>
+          </div>
+          <div class="work">
+              <img src="pictures/design.png">
+              <div class="layer">
+                  <h3>Webdesign</h3>
+                  <p>HTML5, CSS, JavaScript <br> John Hopkins University</p>
+                  <a href="#Weiterbild"><i class="fa-solid fa-graduation-cap"></i></i></a>
+              </div>
+          </div>
+      </div>
+      <a href="#Weiterbild" class="btn" onclick="openPopup()">Mehr Erfahren</a>
+  </div>
+</div>
+<!-------------------Weiterbildung Ende--------------------->
+<!-------------------Float down Info Weiterbildung Anfang--------------------->
+<div id="panel">
+  <div class="box">
+      <div class="popup" id="popup">
+          <img src="pictures/lecture_1.png">
+          <h4>Weiterbildungen</h4>
+          <u>
+              <li>Java Programming 1, Online Kurs<br>Department of Computer Science<br>University of Helsinki<br>abgeschlossen 02/2023</li>
+              <li>HTML, CSS, Javascript for Web Developers, Online Kurs<br>Whiting School of Engineering<br>Johns Hopkins University<br>03/2023 bis 04/2023</li>
+              <li>Java Programming 2, Online Kurs<br>Department of Computer Science<br>University of Helsinki<br>laufend<br>02/2023 bis 06/2023</li>
+              <li>Python Programming, Online Kurs<br>Department of Computer Science<br>University of Helsinki<br>laufend<br>02/2023 bis 06/2023</li>
+              </u>
+              <button type="submit" class="btn3" onclick="closePopup()">Zurück</button>
+      </div>
+  </div>
+</div> 
+<!-------------------Float down Info Weiterbildung Ende--------------------->
+<!-------------------Kontankt Anfang--------------------->
+<div id="neuerKontakt">
+    <div class="forScale">
+<section class="contact">
+    <div class="content">
+        <h4>Kontakt aufnehmen</h4>
+    </div>
+    <div class="container3">
+        <div class="contactInfo">
+            <div class="box2">
+                <div class="icon"><i class="fa-sharp fa-solid fa-envelope"></i></div>
+                <div class="text">
+                    <h6>Thomas@Tannenberg.online</h6>
                 </div>
-            </div>
-            <div class="work">
-                <img src="pics/python.jpg">
-                <div class="layer">
-                    <h3>Python</h3>
-                    <p>Python Programming <br> University of Helsinki</p>
-                    <a href="#Weiterbild"><i class="fa-solid fa-graduation-cap"></i></i></a>
+            <div class="box2">
+                <div class="icon"><i class="fa-solid fa-mobile"></i></div>
+                <div class="text">
+                    <h7>+49 172 67 18 527</h7>
                 </div>
-            </div>
-            <div class="work">
-                <img src="pics/HTML.jpg">
-                <div class="layer">
-                    <h3>Webdesign</h3>
-                    <p>HTML5, CSS, JavaScript <br> John Hopkins University</p>
-                    <a href="#Weiterbild"><i class="fa-solid fa-graduation-cap"></i></i></a>
-                </div>
-            </div>
+            </div>         
         </div>
-        <a href="#Weiterbild" class="btn" onclick="openPopup()">Mehr Erfahren</a>
+    </div>
+</section>
+</div>
+<a href="Downloads/Thomas Tannenberg Profil 1.pdf" download class="btn btn2">Download Kurzprofil</a>
+</div>
+<!-------------------Kontankt Ende--------------------->
+<!-------------------JavaScript--------------------->
+<!-------------------Animation Profil Anfang--------------------->
+<script>
+var tablinks = document.getElementsByClassName("tab-links");
+var tabcontent = document.getElementsByClassName("tab-content");
+
+function opentab(tabname){
+  for(tablink of tablinks){
+    tablink.classList.remove("active-link");
+    }
+  for(tabcont of tabcontent){
+    tabcont.classList.remove("active-tab");
+  }
+  event.currentTarget.classList.add("active-link");
+  document.getElementById(tabname).classList.add("active-tab");
+}
+</script>
+<!-------------------Animation Profil Ende--------------------->
+<!-------------------Info Weiterbildung Anfang--------------------->
+<script>
+  let popup = document.getElementById("popup");
+  
+  function openPopup(){
+     popup.classList.add("open-popup");
+  
+  }
+  function closePopup(){
+     popup.classList.remove("open-popup");
+      
+  }
+  </script>
+<!-------------------Info Weiterbildung Ende--------------------->
+</body>
+<!-------------------Ende--------------------->
+<footer>
+<div id="kontak">
+    <div class="container">
+        <div class="copyright">
+            <p>copyright &copy; by Thomas Tannenberg<br>created 03/2023 in Visual Studio Code<br>Made with <i class="fa-solid fa-heart"></i></p>
+        </div>
     </div>
 </div>
-
-
-<!-------------------Kontakt--------------------->
-<div id="contact">
-    <div class="container">
-        <div class="row">
-            <div class="contact-left">
-                <h1 class="subtitle">Mich kontaktieren</h1>
-                <p><i class="fa-solid fa-envelope"></i>Thomas@Tannenberg.online</p>
-                <p><i class="fa-solid fa-mobile-screen-button"></i>+49 172 67 18 527</p>
-                <div class="social-icons">
-                    <a href="https://github.com/ThomasTannenberg"><i class="fa-brands fa-github"></i></a>
-                    <a href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a>
-                    <a href="https://de.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
-                </div>
-                <a href="Downloads/Thomas Tannenberg_Profil.pdf" download class="btn btn2">Download Kurzprofil</a>
-            </div>
-            <div class="contact-right">
-                <div class="copyright">
-                    <p>copyright &copy; by Thomas Tannenberg <br> created 03/2023 in Visual Studio Code <br> Made with <i class="fa-solid fa-heart"></i></p>
-                </div>
-            </div>
-            
-            </div>
-        </div>
-    </div>
-<!-------------------Float down Info Weiterbildungen--------------------->
-<div id="panel">
-    <div class="box">
-        <div class="popup" id="popup">
-            <img src="pics/lecture_1.png">
-            <h4>Weiterbildungen</h4>
-            <u>
-                <li>Java Programming 1, Online Kurs<br>Department of Computer Science<br>University of Helsinki<br>abgeschlossen 02/2023</li>
-                <li>HTML, CSS, Javascript for Web Developers, Online Kurs<br>Whiting School of Engineering<br>Johns Hopkins University<br>03/2023 bis 04/2023</li>
-                <li>Java Programming 2, Online Kurs<br>Department of Computer Science<br>University of Helsinki<br>laufend<br>02/2023 bis 06/2023</li>
-                <li>Python Programming, Online Kurs<br>Department of Computer Science<br>University of Helsinki<br>laufend<br>02/2023 bis 06/2023</li>
-                </u>
-                <button type="submit" class="btn3" onclick="closePopup()">Zurück</button>
-        </div>
-    </div>
-</div> 
-
-<!-------------------side menu for mobile--------------------->
-<script>
-
-    var tablinks = document.getElementsByClassName("tab-links");
-    var tabcontent = document.getElementsByClassName("tab-content");
-
-    function opentab(tabname){
-        for(tablink of tablinks){
-            tablink.classList.remove("active-link");
-        }
-        for(tabcont of tabcontent){
-            tabcont.classList.remove("active-tab");
-        }
-        event.currentTarget.classList.add("active-link");
-        document.getElementById(tabname).classList.add("active-tab");
-    }
-
-</script>
-
-<!-------------------side menu for mobile--------------------->
-<script>
-
-    var sidemenu = document.getElementById("sidemenu");
-
-    function openmenu(){
-        sidemenu.style.right = "0";
-    }
-    function closemenu(){
-        sidemenu.style.right = "";
-    }
-
-
-</script>
-
-<!-------------------Float down Info Weiterbildungen--------------------->
-<script>
-let popup = document.getElementById("popup");
-
-function openPopup(){
-   popup.classList.add("open-popup");
-
-}
-function closePopup(){
-   popup.classList.remove("open-popup");
-    
-}
-</script>
-
-
-</body>
-
-
+</footer>
+<!-------------------Ende--------------------->
 </html>
