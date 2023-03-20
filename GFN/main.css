@@ -50,9 +50,19 @@ nav ul li a:hover::after{
 /*-----LF02V2 Arbeitsplatz nach Kundenwunsch ausstatten----*/
 .containerLF02V2{
   background-color: white;
+  margin-top: 5px;
+}
+h2{
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
 }
 .Dateien li a{
 font-size: 25px;
+}
+
+.text{
+  margin-bottom: 10px;
 }
 
 /*-------Footer---------*/ 
