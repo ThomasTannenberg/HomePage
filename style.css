@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 18px;
   box-sizing: border-box;
 }
 
@@ -343,3 +342,26 @@ margin-bottom: 10px;
   border-radius: 50%;
 }
 /*-------Footer---------*/ 
+
+@media only screen and (max-width: 1130px) {
+  .waviy span {
+    font-size: 14px;
+  }
+  .subtitle{
+    font-size: 30px;
+  }
+  .subtitle2{
+    font-size: 30px;
+  }
+  .profil-col-1{
+    flex-basis: 50%;
+  }
+  .profil-col-2{
+    flex-basis: 50%;
+    font-size: 14px;
+  }
+  .tab-links{
+    font-size: 12px;
+    margin-right: 12px;
+  }
+}
