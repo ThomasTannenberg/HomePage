@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="test.css">
+  <script src="https://kit.fontawesome.com/a043229ba3.js" crossorigin="anonymous"></script>
+  <title>Sidemenu Test</title>
+</head>
+<body>
+<!-- Navigation -->
+<header>
+  <div class="container">
+    <div class="navigation">
+      <div id="sidemenu">
+        <i class="fa-solid fa-bars" onclick="closemenu()"></i>
+        <a href="#" class="menuItem">Home</a>
+        <a href="" class="menuItem">Profil</a>
+        <a href="" class="menuItem">Umschulung</a>
+        <a href="" class="menuItem">Weiterbildung</a>
+        <a href="" class="menuItem">Kontakt</a>
+        <a href="" class="menuItem">Download</a>
+        <a href="" class="menuItem">Bilder</a>
+     </div>
+     <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+  </div>
+</header>
+<!-- /Navigation -->
+<!-- Top Hintergrund -->
+<div id="topBackgrnd">
+</div>
+<div class="waviy">
+  <span style="--i:1">T</span>
+  <span style="--i:2">h</span>
+  <span style="--i:3">o</span>
+  <span style="--i:4">m</span>
+  <span style="--i:5">a</span>
+  <span style="--i:6">s</span>
+  <span style="--i:7">.</span>
+  <span style="--i:9">T</span>
+  <span style="--i:10">a</span>
+  <span style="--i:11">n</span>
+  <span style="--i:12">n</span>
+  <span style="--i:13">e</span>
+  <span style="--i:14">n</span>
+  <span style="--i:15">b</span>
+  <span style="--i:16">e</span>
+  <span style="--i:17">r</span>
+  <span style="--i:18">g</span>
+  <span style="--i:19">.</span>
+  <span style="--i:20">F</span>
+  <span style="--i:21">a</span>
+  <span style="--i:22">c</span>
+  <span style="--i:23">h</span>
+  <span style="--i:24">i</span>
+  <span style="--i:25">n</span>
+  <span style="--i:26">f</span>
+  <span style="--i:27">o</span>
+  <span style="--i:28">r</span>
+  <span style="--i:29">m</span>
+  <span style="--i:30">a</span>
+  <span style="--i:31">t</span>
+  <span style="--i:32">i</span>
+  <span style="--i:33">k</span>
+  <span style="--i:34">e</span>
+  <span style="--i:35">r</span>
+  <h1>
+</div>
+<!-- /Top Hintergrund -->
+<!-- Profil -->
+<div id="profil">
+  <div class="container">
+      <div class="row">
+          <div class="profil-col-1">
+              <img src="pictures/Profil_2.jpg">
+          </div> 
+          <div class="profil-col-2"> 
+              <h1 class="subtitle">Profil</h1>
+              <p>Mich fasziniert sowohl die Welt der Elektronen, Neutronen und Protonen als auch die Welt der Nullen und Einsen.<br>Beide Welten unterliegen streng logischen Abläufen und haben mehr gemeinsam als es auf den ersten Blick scheint. </p>
+
+              <div class="tab-titles">
+                  <p class="tab-links active-link" onclick="opentab('Softskills')">Softskills</p>
+                  <p class="tab-links" onclick="opentab('Sprachkenntnisse')">Sprachkenntnisse</p>
+                  <p class="tab-links" onclick="opentab('Aktuell')">Aktuell</p>
+                  <p class="tab-links" onclick="opentab('Ausbildung')">Ausbildung</p>
+                  <p class="tab-links" onclick="opentab('IT-Skills')">IT</p>
+                  <p class="tab-links" onclick="opentab('Qualifikationen')">Qualifikationen</p>
+              </div>
+              <div class="tab-content" id="Sprachkenntnisse">
+                  <ul>
+                      <li><span>Englisch</span><br>C1</li>
+                      <li><span>Französisch</span><br>A2</li>
+                      <li><span>Polnisch</span><br>Muttersprache</li>
+                      <li><span>Deutsch</span><br>Muttersprache</li>
+                  </ul>
+              </div>
+              <div class="tab-content active-tab" id="Softskills">
+                  <ul>
+                      <li><span>Probleme lösen</span><br>Komplexe Problemstellungen verstehen und kreative Lösungsfindung.</li>
+                      <li><span>Teamplayer</span><br>Fähigkeit zur Kommunikation, zum Zuhören und einer guten Zusammenarbeit in der Gruppe.</li>
+                      <li><span>Verantwortungsbewusstsein</span><br>Verantwortung für meine Aufgabenbereiche und für andere Mitarbeiter übernehmen.</li>
+                  </ul>
+              </div>
+              <div class="tab-content" id="Aktuell">
+                  <ul>
+                      <li><span>01/2023 bis 02/2025</span><br>Fachinformatiker Anwendungsentwicklung (IHK)<br>Umschulung</li>
+                      <li><span>12/2022 bis 06/2023</span><br>Java Programming 1&amp;2<br>Python Programming<br>University of Helsinki</li>
+                      <li><span>03/2023 bis 03/2023</span><br>HTML, CSS, and Javascript for Web Developers<br>John Hopkins University</li>
+                  </ul>
+              </div>
+              <div class="tab-content" id="Ausbildung">
+                  <ul>
+                      <li><span>03/2006 bis 04/2011</span><br>Studium der Chemischen Technik<br>Hochschule Mannheim<br>Kein Abschluss</li>
+                      <li><span>03/2002 bis 03/2006</span><br>Studium der Chemie, Geschichte<br>und Philosophie auf Lehramt<br>Universität Heidelberg<br>Kein Abschluss</li>                        
+                      <li><span>03/2002</span><br>Allgemeine Hochschulereife<br>Carl-Bosch-Gymnasium</li>
+                  </ul>
+              </div>
+              <div class="tab-content" id="IT-Skills">
+                  <ul>
+                      <li><span2>Java</span2><br><img src="pictures/Balken_gut.png"></li>
+                      <li><span2>Python</span2><br><img src="pictures/Balken_gut.png"></li>
+                      <li><span2>HTML</span2><br><img src="pictures/Balken_gut.png"></li>
+                      <li><span2>CSS</span2><br><img src="pictures/Balken_gut.png"></li>
+                      <li><span2>Javascript</span2><br><img src="pictures/Balken_gut.png"></li>
+                      <li><span2>PC-Systeme</span2><br><img src="pictures/Balken_sehr_gut.png"></li>
+                      <li><span2>Office</span2><br><img src="pictures/Balken_sehr_gut.png"></li>
+                  </ul>
+              </div>
+              <div class="tab-content" id="Qualifikationen">
+                  <ul>
+                      <li><span2>Verfahrenstechnik</span2><br><img src="pictures/Balken_sehr_gut.png"></li>
+                      <li><span2>Chemie</span2><br><img src="pictures/Balken_sehr_gut.png"></li>
+                      <li><span2>Pädagogik</span2><br><img src="pictures/Balken_sehr_gut.png"></li>
+                      <li><span2>Mathematik</span2><br><img src="pictures/Balken_sehr_gut.png"></li>
+                      <li><span2>Analysetechnikent</span2><br><img src="pictures/Balken_sehr_gut.png"></li>
+                  </ul>
+              </div>
+         </div> 
+      </div>
+  </div>
+</div>
+<!-- Profil -->
+<!-----------------Umschulung Anfang--------------------->
+<div id="umschulung">
+  <div class="container2">
+       <h1 class="subtitle2">Umschulung <br> Fachinformatiker</h1>
+           <p>GFN GmbH Mannheim</p>
+       <div class="umschulung-liste">
+           <div>
+               <i class="fa-solid fa-code-compare"></i>
+               <h2>Kernqualifikationen</h2>
+               <u>
+                   <li>Das Unternehmen und die eigene Rolle im Betrieb</li>
+                   <li>Arbeitsplatz nach Kundenwunsch ausstatten</li>
+                   <li>Clients in Netzwerke einbinden</li>
+                   <li>Schutzbedarfsanalyse im eigenen Arbeitsbereich durchführen</li>
+                   <li>Software zur Verwaltung von Daten anpassen</li>
+                   <li>Serviceanfragen bearbeiten</li>
+                   <li>Cyber-physische Systeme ergänzen</li>
+                   <li>Daten systemübergreifend bereitstellen</li>
+                   <li>Netzwerke und Dienste bereitstellen</li>
+                   <li>Einführung in das Projektmanagement</li>
+                   <li>Office Management</li>
+               </u>
+           </div>
+           <div>
+               <i class="fa-solid fa-code-branch"></i>
+               <h2>Fachqualifikationen</h2>
+               <u>
+                   <li>Benutzerschnittstellen gestalten und entwickeln</li>
+                   <li>Funktionalität in Anwendungen realisieren</li>
+                   <li>Kundenspezifische Anwendungsentwicklung durchführen</li>
+                   <li>Datenbanken & SQL, Python, HTML/CS</li>
+               </u>
+           </div>
+           <div>
+               <i class="fa-solid fa-code-pull-request"></i>
+               <h2>Zusatzqualifikationen</h2>
+               <u>
+                   <li>Oracle Certified Associate Java (OCA) mit Zertifizierung</li>
+                   <li>Agile SCRUM Master mit Zertifizierung</li>
+               </u>
+
+           </div>
+       </div>
+  </h1> 
+</div>
+<!-----------------Umschulung Ende--------------------->
+<!-------------------Weiterbildung Anfang--------------------->
+<div id="Weiterbild">
+  <div class="container">
+      <h1 class="subtitle">Weiterbildungen</h1>
+      <div class="work-list">
+          <div class="work">
+              <img src="pictures/Java.png">
+              <div class="layer">
+                  <h3>Java</h3>
+                  <p>Java Programming 1 &amp; 2 <br> University of Helsinki</p>
+                  <a href="Downloads/certificate-java-programming-i.png" download><i class="fa-solid fa-graduation-cap"></i></a>
+                  <p>runterladen</p>
+              </div>
+          </div>
+          <div class="work">
+              <img src="pictures/python.png">
+              <div class="layer">
+                  <h3>Python</h3>
+                  <p>Python Programming <br> University of Helsinki</p>
+                  <a href="#Weiterbild"><i class="fa-solid fa-graduation-cap"></i></i></a>
+              </div>
+          </div>
+          <div class="work">
+              <img src="pictures/design.png">
+              <div class="layer">
+                  <h3>Webdesign</h3>
+                  <p>HTML5, CSS, JavaScript <br> John Hopkins University</p>
+                  <a href="#Weiterbild"><i class="fa-solid fa-graduation-cap"></i></i></a>
+              </div>
+          </div>
+      </div>
+      <a href="#" class="btn">Kurzprofil runterladen</a>
+  </div>
+</div>
+<!-------------------Weiterbildung Ende--------------------->
+<!-- Kontakt -->
+<div id="neuerKontakt">
+  <div class="forScale">
+<section class="contact">
+  <div class="content">
+      <h4>Kontakt aufnehmen</h4>
+  </div>
+  <div class="container3">
+      <div class="contactInfo">
+          <div class="box2">
+              <div class="icon"><i class="fa-sharp fa-solid fa-envelope"></i>
+              </div>
+              <div class="text">
+                  <h6>Thomas@Tannenberg.online</h6>
+              </div>
+          <div class="box2">
+              <div class="icon"><i class="fa-solid fa-mobile"></i></div>
+              <div class="text">
+                  <h7>+49 172 67 18 527</h7>
+              </div>
+          </div>         
+      </div>
+  </div>
+</section>
+</div>
+
+
+
+<!-- Java Skripte -->
+<!-- Menu Sidebar -->
+<script>
+  var sidemeu = document.getElementById(sidemenu);
+
+  function openmenu(){
+    sidemenu.style.left = "0em";
+  }
+  function closemenu(){
+    sidemenu.style.left = "-200em";
+  }
+</script>
+<!-- /Menu Sidebar -->
+<!-------------------Animation Profil Anfang--------------------->
+<script>
+  var tablinks = document.getElementsByClassName("tab-links");
+  var tabcontent = document.getElementsByClassName("tab-content");
+  
+  function opentab(tabname){
+    for(tablink of tablinks){
+      tablink.classList.remove("active-link");
+      }
+    for(tabcont of tabcontent){
+      tabcont.classList.remove("active-tab");
+    }
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+  }
+  </script>
+  <!-------------------Animation Profil Ende--------------------->
+</body>
+<!-------------------Ende--------------------->
+<footer>
+  <div id="kontak">
+      <div class="container">
+          <div class="copyright">
+              <p>copyright &copy; by Thomas Tannenberg<br>created 03/2023 in Visual Studio Code<br>Made with <i class="fa-solid fa-heart"></i></p>
+          </div>
+      </div>
+  </div>
+  </footer>
+  <!-------------------Ende-------------->
+</html>

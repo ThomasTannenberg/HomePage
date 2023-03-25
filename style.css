@@ -1,124 +1,96 @@
 *{
   margin: 0;
   padding: 0;
-  font-family: Calibri, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
   box-sizing: border-box;
-  font-size: 20px;
-  font-weight: 900;
 }
-/*-------Allgemeiner Hintergrund Anfang---------*/
+
+/* Hintergrund */
 body{
-background: rgb(0,0,0);
-background: radial-gradient(circle, rgba(0,0,0,1) 38%, rgba(15,23,232,0.8720354352678572) 100%, rgba(0,0,0,1) 100%); 
+  background: #03001C;
+  }
+/* /Hintergrund */
+
+/* Uberschrift  */
+.waviy {
+  position: relative;
+  background-color: #0d71b2;
 }
-/*-------Allgemeiner Hintergrund Ende---------*/
-/*-------Menu und Titel Anfang---------*/
-#header{
+.waviy span {
+  position: relative;
+  display: inline-block;
+  font-size: 3em;
+  color: #F6F1F1;
+  text-transform: uppercase;
+  animation: flip 2s infinite;
+  animation-delay: calc(.2s * var(--i));
+}
+@keyframes flip {
+  0%,80% {
+    transform: rotateY(360deg) 
+  }
+}
+
+
+/* /Uberschrift  */
+
+/* Navigaton */
+.fa-solid{
+  font-size: 2em;
+  display: block;
+  color: #F6F1F1;
+  cursor: pointer;
+}
+.navigation{
+  display: flex;
+  align-items: center;
+  background-color: #03001C;
+}
+.menuItem{
+color: #F6F1F1;
+font-size: 2em;
+display: block;
+text-decoration: none;
+transition: 0.25s;
+padding-left: 1.25em;
+padding-top: 0.5em;
+}
+#sidemenu{
+  position: absolute;
+  left: -200em;
+  top: 0em;
+  padding-right: 2.5em;
+  transition: 0.25s;
+}
+#sidemenu:hover > .menuItem{
+  opacity: 0.2;
+}
+#sidemenu:hover > .menuItem:hover{
+  opacity: 1.0;
+  transform: scale(1.15);
+  background-color: #F6F1F1;
+  color: #03001C;
+  border-radius: 0.25em;
+  font-weight: 900;
+  padding-right: 0.5em;
+}
+/* /Navigation */
+
+/* Top Hintergrund */
+#topBackgrnd{
   width: 100%;
-  height: 100vh;
-  background-image: url(pictures/background_5.jpg);
+  height: 41vh;
+  background-image: url(pictures/background_oben.jpg);
   background-size: cover;
   background-position: center;
 }
+/* /Top Hintergrund */
 
-.container{
-  padding: 10px 10%;
-}
-
-nav{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  font-size: 10px;
-}
-
-.logo{
-  width: 140px;
-  margin: 10px;
-}
-
-nav ul li{
-  display: inline-block;
-  list-style: none;
-  margin: 10px 20px;
-}
-
-nav ul li a{
-  color: white;
-  text-decoration: none;
-  font-size: 30px;
-  position: relative;
-}
-
-nav ul li a::after{
-  content: '';
-  width: 0;
-  height: 10px;
-  background: #0d71b2;
-  position: absolute;
-  left: 0;
-  bottom: -6px;
-  transition: 0.5s;
-}
-
-nav ul li a:hover::after{
-  width: 100%;
-}
-
-.header-text{
-  margin-top: 20%;
-  font-size: 40px;
-  letter-spacing: 2px;
-  
-}
-
-.header-text h1{
-  font-size: 80px;
-  margin-top: 20px;
-  background: #0d71b2;
-  width: 900px;
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
-  -webkit-text-stroke: 2px #0d71b2;
-}
-
-.header-text h1 span{
-  color: #0d71b2;
-  font-size: 78px;
-  -webkit-text-stroke: 2px white;
-
-}
-}
-/*-------Menu und Titel Ende---------*/
-/*-------Titel Anfang---------*/
-.headerText{
-  margin-top: 20%;
-  color: white;
-}
-.headerText h1{
-  font-size: 80px;
-  margin-top: 20px;
-  background: #0d71b2;
-  color: white;
-  width: 850px;
-  border-radius: 10px;
-  
-}
-.headerText h1 span{
-  color: #0d71b2;
-  background-color: #0b385f;
-  font-size: 78px;
-  
-}
-/*-------Titel Ende---------*/
-/*-------Profil Anfang---------*/
+/* Profil */
 #profil{
   padding: 20px 0 0;
   color: white;
-}
-.container{
-    padding: 100px 5px;
 }
 .row{
   display: flex;
@@ -147,7 +119,7 @@ nav ul li a:hover::after{
     background: none;
   }
   .tab-titles p{
-    color: white;
+    color: #F6F1F1;
   }
   .tab-links{
     margin-right: 50px;
@@ -177,7 +149,7 @@ nav ul li a:hover::after{
     color: #0d71b2;
   }
   .tab-content ul li span2{
-    color: white;
+    color: #F6F1F1;
   }
   .tab-content{
     display: none;
@@ -185,51 +157,51 @@ nav ul li a:hover::after{
   .tab-content.active-tab{
     display: block;
   }
-  /*-------Profil Ende---------*/
-  /*-------Umschulung Anfang---------*/
-  #umschulung{
-    padding: 30px 0;
-    color: white;
-  }
-  .subtitle2{
-    font-size: 60px;
-  }
-  .container2 p{
-    color: #0d71b2;
-  }
-  .umschulung-liste{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-gap: 40px;
-    margin-top: 50px;
-    
-  }
-  .umschulung-liste div{
-    background: #0d71b2;
-    padding: 25px;
-    border-radius: 10px;
-    transition: background 0.5s, transform 0.5s;
-  }
-  .umschulung-liste div i{
-    margin-bottom: 30px;
-  }
-  .umschulung-liste div h2{
-    font-size: 30px;
-    margin-bottom: 25px;
-  }
-  .umschulung-liste div u{
-    font-size: 20px;
-    font-weight: 500;
-    margin: 30px 0 10px;
-    
-    display: inline-block;
-    text-decoration: none;
-  }
-  .umschulung-liste div:hover{
-    background: #0b385f;
-    transform: translateY(-10px);
-  }
- /*-------Umschulung Ende---------*/
+/* Profil */
+/*-------Umschulung Anfang---------*/
+#umschulung{
+  padding: 30px 0;
+  color: white;
+}
+.subtitle2{
+  font-size: 60px;
+}
+.container2 p{
+  color: #0d71b2;
+}
+.umschulung-liste{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 40px;
+  margin-top: 50px;
+  
+}
+.umschulung-liste div{
+  background: #0d71b2;
+  padding: 25px;
+  border-radius: 10px;
+  transition: background 0.5s, transform 0.5s;
+}
+.umschulung-liste div i{
+  margin-bottom: 30px;
+}
+.umschulung-liste div h2{
+  font-size: 30px;
+  margin-bottom: 25px;
+}
+.umschulung-liste div u{
+  font-size: 20px;
+  font-weight: 500;
+  margin: 30px 0 10px;
+  
+  display: inline-block;
+  text-decoration: none;
+}
+.umschulung-liste div:hover{
+  background: #0b385f;
+  transform: translateY(-10px);
+}
+/*-------Umschulung Ende---------*/
  /*-------Weiterbildung Anfang---------*/
  #Weiterbild{
   padding: 20px 0;
@@ -316,113 +288,52 @@ margin-bottom: 10px;
 .btn:hover{
   background: #0d71b2;
 }
- /*-------Weiterbildung Ende---------*/  
-/*-------Info Weiterbildung Anfang---------*/
-#panel{
-  visibility: hidden;
-  height: 0;
-  width: 0;
-}
-.box{
-  width: 100%;
-  display: flex;
-}
-.btn3{
-  padding: 10px 60px;
-  background: white;
-  color: #0d71b2;
-  border: 1;
-  outline: none;
-  cursor: pointer;
-  font-size: 30px;
-  font-weight: 500;
-  border-radius: 30px;
-  box-shadow: 0 5px 5px rgba(0,0,0,0.2);
-}
-.popup{
-  width: 500px;
-  background: #0d71b2;
-  border-radius: 6px;
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(0.1);
-  text-align: center;
-  padding: 0 30px 30px;
-  color: white;
-  visibility: hidden;
-  transition: 0.6s;
-}
-.open-popup{
-  visibility: visible;  
-  transform: translate(-50%, 360%) scale(1);
-}
-.popup img{
-  width: 150px;
-  margin-top: -50px;
-  border-radius: 50%;
-  box-shadow: 0 5px 5px rgba(0,0,0,0.2);
-}
-.popup h4{
-  font-size: 30px;
-  font-weight: 500;
-  margin: 30px 0 10px;
-  text-decoration: none;
-}
-.popup u li{
-  font-size: 25px;
-  margin: 15px 0 5px;
-  padding: 5px 0;
-  list-style: none;
-  display:inline-block;
-  text-decoration: none;
-}
-/*-------Info Weiterbildung Ende---------*/
 /*-------Kontank Anfang---------*/
 #neuerKontakt{
-color: #0d71b2;
-text-align: center;
-align-items: center;
-justify-content: center;
-}
-#neuerKontakt .forScale{
-background-image: url(pictures/contact3.jpg);
-background-repeat: no-repeat;
-border-radius: 10px;
-background-size: cover;
-background-position: center;
-transition: 2s;
-}
-.forScale:hover{
-  transform: scale(1.4);
-}
-.contact .content h4{
-  color: white;
-  font-size: 70px;
-  
-}
-.contact .container3 .contactInfo .box2 .icon{
-  color: white;
-  
-}
-.contact .container3 .contactInfo .box2 .text h6{
-font-size: 40px;
-color: white;
-
- }
- .contact .container3 .contactInfo .box2 .text h7{
+  color: #0d71b2;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  }
+  #neuerKontakt .forScale{
+  background-image: url(pictures/contact3.jpg);
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  background-size: cover;
+  background-position: center;
+  transition: 2s;
+  }
+  .forScale:hover{
+    transform: scale(1.4);
+  }
+  .contact .content h4{
+    color: white;
+    font-size: 70px;
+    
+  }
+  .contact .container3 .contactInfo .box2 .icon{
+    color: white;
+    
+  }
+  .contact .container3 .contactInfo .box2 .text h6{
   font-size: 40px;
   color: white;
   
-} 
-.btn.btn2{
-  display: inline-block;
-  background: #0d71b2;
-}
-/*-------Kontankt Ende---------*/  
+   }
+   .contact .container3 .contactInfo .box2 .text h7{
+    font-size: 40px;
+    color: white;
+    
+  } 
+  .btn.btn2{
+    display: inline-block;
+    background: #0d71b2;
+  }
+  /*-------Kontankt Ende---------*/  
 /*-------Footer---------*/ 
 .copyright{
   text-align: center;
+  margin-top: 5em;
 }
 .copyright i{
   text-align: center;

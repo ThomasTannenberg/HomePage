@@ -1,0 +1,344 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
+/* Hintergrund */
+body{
+  background: #03001C;
+  }
+/* /Hintergrund */
+
+/* Uberschrift  */
+.waviy {
+  position: relative;
+  background-color: #0d71b2;
+}
+.waviy span {
+  position: relative;
+  display: inline-block;
+  font-size: 3em;
+  color: #F6F1F1;
+  text-transform: uppercase;
+  animation: flip 2s infinite;
+  animation-delay: calc(.2s * var(--i));
+}
+@keyframes flip {
+  0%,80% {
+    transform: rotateY(360deg) 
+  }
+}
+
+
+/* /Uberschrift  */
+
+/* Navigaton */
+.fa-solid{
+  font-size: 2em;
+  display: block;
+  color: #F6F1F1;
+  cursor: pointer;
+}
+.navigation{
+  display: flex;
+  align-items: center;
+  background-color: #03001C;
+}
+.menuItem{
+color: #F6F1F1;
+font-size: 2em;
+display: block;
+text-decoration: none;
+transition: 0.25s;
+padding-left: 1.25em;
+padding-top: 0.5em;
+}
+#sidemenu{
+  position: absolute;
+  left: -200em;
+  top: 0em;
+  padding-right: 2.5em;
+  transition: 0.25s;
+}
+#sidemenu:hover > .menuItem{
+  opacity: 0.2;
+}
+#sidemenu:hover > .menuItem:hover{
+  opacity: 1.0;
+  transform: scale(1.15);
+  background-color: #F6F1F1;
+  color: #03001C;
+  border-radius: 0.25em;
+  font-weight: 900;
+  padding-right: 0.5em;
+}
+/* /Navigation */
+
+/* Top Hintergrund */
+#topBackgrnd{
+  width: 100%;
+  height: 41vh;
+  background-image: url(pictures/background_oben.jpg);
+  background-size: cover;
+  background-position: center;
+}
+/* /Top Hintergrund */
+
+/* Profil */
+#profil{
+  padding: 20px 0 0;
+  color: white;
+}
+.row{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.profil-col-1{
+  flex-basis: 20%;
+}
+.profil-col-1 img{
+  width: 85%;
+  border-radius: 15px;  
+} 
+.profil-col-2 p{
+  color: #0d71b2;
+}
+.profil-col-2{
+  flex-basis: 60%;
+  }
+  .subtitle{
+    font-size: 60px;
+  }
+  .tab-titles{
+    display: flex;
+    margin: 20px 0 40px;
+    background: none;
+  }
+  .tab-titles p{
+    color: #F6F1F1;
+  }
+  .tab-links{
+    margin-right: 50px;
+    font-size: 30px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+  }
+  .tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #0d71b2;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+  }
+  .tab-links.active-link::after{
+    width: 50%;
+  }
+  .tab-content ul li{
+    list-style: none;
+    margin: 10px 0;
+  }
+  .tab-content ul li span{
+    color: #0d71b2;
+  }
+  .tab-content ul li span2{
+    color: #F6F1F1;
+  }
+  .tab-content{
+    display: none;
+  }
+  .tab-content.active-tab{
+    display: block;
+  }
+/* Profil */
+/*-------Umschulung Anfang---------*/
+#umschulung{
+  padding: 30px 0;
+  color: white;
+}
+.subtitle2{
+  font-size: 60px;
+}
+.container2 p{
+  color: #0d71b2;
+}
+.umschulung-liste{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 40px;
+  margin-top: 50px;
+  
+}
+.umschulung-liste div{
+  background: #0d71b2;
+  padding: 25px;
+  border-radius: 10px;
+  transition: background 0.5s, transform 0.5s;
+}
+.umschulung-liste div i{
+  margin-bottom: 30px;
+}
+.umschulung-liste div h2{
+  font-size: 30px;
+  margin-bottom: 25px;
+}
+.umschulung-liste div u{
+  font-size: 20px;
+  font-weight: 500;
+  margin: 30px 0 10px;
+  
+  display: inline-block;
+  text-decoration: none;
+}
+.umschulung-liste div:hover{
+  background: #0b385f;
+  transform: translateY(-10px);
+}
+/*-------Umschulung Ende---------*/
+ /*-------Weiterbildung Anfang---------*/
+ #Weiterbild{
+  padding: 20px 0;
+  color: white;
+}
+.work-list{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 40px;
+  margin-top: 50px;
+}
+.work{
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  color: white;
+  font-size: 30px;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+.work img{
+  width: 100%;
+  height: 600px;
+  border-radius: 10px;
+  display: block;
+  transition: 1s;
+}
+.layer{
+  width: 100%;
+  height: 100%;
+  opacity: 60%;
+  background: linear-gradient(rgba(0,0,0,0.6) #032936);
+  border-radius: 10px;
+  position:absolute;
+  left: 0;
+  bottom: 0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 40px;
+  text-align: center;
+}
+.layer h3{
+  font-size: 55px;
+  font-weight: 500;
+  margin-bottom: 10px;
+
+}
+.layer p{
+font-size: 30px;
+margin-bottom: 10px;
+}
+.layer a{
+  margin-top: 10px;
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 60px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  text-align: center;
+  background:#0d71b2;
+}
+.work:hover img{
+  transform: scale(1.2);
+}
+.work:hover .layer{
+  opacity: 100%;
+}
+.btn {
+  display: block;
+  margin: 50px auto;
+  width: fit-content;
+  border: 2px solid #0d71b2;
+  padding: 14px 50px;
+  border-radius: 10px;
+  text-decoration: none;
+  color: white;
+  font-size: 25px;
+  transition: 0.5s;
+}
+.btn:hover{
+  background: #0d71b2;
+}
+/*-------Kontank Anfang---------*/
+#neuerKontakt{
+  color: #0d71b2;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  }
+  #neuerKontakt .forScale{
+  background-image: url(pictures/contact3.jpg);
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  background-size: cover;
+  background-position: center;
+  transition: 2s;
+  }
+  .forScale:hover{
+    transform: scale(1.4);
+  }
+  .contact .content h4{
+    color: white;
+    font-size: 70px;
+    
+  }
+  .contact .container3 .contactInfo .box2 .icon{
+    color: white;
+    
+  }
+  .contact .container3 .contactInfo .box2 .text h6{
+  font-size: 40px;
+  color: white;
+  
+   }
+   .contact .container3 .contactInfo .box2 .text h7{
+    font-size: 40px;
+    color: white;
+    
+  } 
+  .btn.btn2{
+    display: inline-block;
+    background: #0d71b2;
+  }
+  /*-------Kontankt Ende---------*/  
+/*-------Footer---------*/ 
+.copyright{
+  text-align: center;
+  margin-top: 5em;
+}
+.copyright i{
+  text-align: center;
+  color: red;
+  font-size: 30px;
+  align-items: center;
+  border-radius: 50%;
+}
+/*-------Footer---------*/ 

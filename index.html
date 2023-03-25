@@ -4,36 +4,71 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Thomas Tannenberg Profil - SPA</title>
   <link rel="stylesheet" href="style.css">
   <script src="https://kit.fontawesome.com/a043229ba3.js" crossorigin="anonymous"></script>
+  <title>Sidemenu Test</title>
 </head>
 <body>
-<!-------------------Menu und Titel Anfang--------------------->
-<div id="header">
-  <div class="containerTop">
-    <nav>
-      <ul>
-        <li><a href="#header">Home</a></li>
-        <li><a href="#profil">Profil</a></li>
-        <li><a href="#umschulung">Umschulung</a></li>
-        <li><a href="#Weiterbild">Weiterbildungen</a></li>
-        <li><a href="#neuerKontakt">Download</a></li>
-        <li><a href="#neuerKontakt">Kontakt</a></li>
-        <li><a href="Gallery/index_galerie.html">Bilder</a></li>
-      </ul>
-    </nav>
-    <div class="headerText">
-      <p>Fachinformatiker Anwendungsentwicklung (IHK)</p>
-      <h1><span>Guten Tag:</span> Mein Name<br>ist Thomas&nbsp;Tannenberg</h1>
+<!-- Navigation -->
+<header>
+  <div class="container">
+    <div class="navigation">
+      <div id="sidemenu">
+        <i class="fa-solid fa-bars" onclick="closemenu()"></i>
+        <a href="#" class="menuItem">Home</a>
+        <a href="" class="menuItem">Profil</a>
+        <a href="" class="menuItem">Umschulung</a>
+        <a href="" class="menuItem">Weiterbildung</a>
+        <a href="" class="menuItem">Kontakt</a>
+        <a href="" class="menuItem">Download</a>
+        <a href="" class="menuItem">Bilder</a>
+     </div>
+     <i class="fa-solid fa-bars" onclick="openmenu()"></i>
   </div>
-<div class="logoCopyRight">
-<img src="pictures/logo2.png">
-  </div>
+</header>
+<!-- /Navigation -->
+<!-- Top Hintergrund -->
+<div id="topBackgrnd">
 </div>
+<div class="waviy">
+  <span style="--i:1">T</span>
+  <span style="--i:2">h</span>
+  <span style="--i:3">o</span>
+  <span style="--i:4">m</span>
+  <span style="--i:5">a</span>
+  <span style="--i:6">s</span>
+  <span style="--i:7">.</span>
+  <span style="--i:9">T</span>
+  <span style="--i:10">a</span>
+  <span style="--i:11">n</span>
+  <span style="--i:12">n</span>
+  <span style="--i:13">e</span>
+  <span style="--i:14">n</span>
+  <span style="--i:15">b</span>
+  <span style="--i:16">e</span>
+  <span style="--i:17">r</span>
+  <span style="--i:18">g</span>
+  <span style="--i:19">.</span>
+  <span style="--i:20">F</span>
+  <span style="--i:21">a</span>
+  <span style="--i:22">c</span>
+  <span style="--i:23">h</span>
+  <span style="--i:24">i</span>
+  <span style="--i:25">n</span>
+  <span style="--i:26">f</span>
+  <span style="--i:27">o</span>
+  <span style="--i:28">r</span>
+  <span style="--i:29">m</span>
+  <span style="--i:30">a</span>
+  <span style="--i:31">t</span>
+  <span style="--i:32">i</span>
+  <span style="--i:33">k</span>
+  <span style="--i:34">e</span>
+  <span style="--i:35">r</span>
+  <h1>
 </div>
-<!-------------------Menu und Titel Ende-------->
-<!-------------------Profil Anfang------------------->
+<!-- /Top Hintergrund -->
+<!-- Profil -->
 <div id="profil">
   <div class="container">
       <div class="row">
@@ -105,7 +140,7 @@
       </div>
   </div>
 </div>
-<!-------------------Profil Ende--------------------->
+<!-- Profil -->
 <!-----------------Umschulung Anfang--------------------->
 <div id="umschulung">
   <div class="container2">
@@ -183,97 +218,78 @@
               </div>
           </div>
       </div>
-      <a href="#Weiterbild" class="btn" onclick="openPopup()">Mehr Erfahren</a>
+      <a href="#" class="btn">Kurzprofil runterladen</a>
   </div>
 </div>
 <!-------------------Weiterbildung Ende--------------------->
-<!-------------------Float down Info Weiterbildung Anfang--------------------->
-<div id="panel">
-  <div class="box">
-      <div class="popup" id="popup">
-          <img src="pictures/lecture_1.png">
-          <h4>Weiterbildungen</h4>
-          <u>
-              <li>Java Programming 1, Online Kurs<br>Department of Computer Science<br>University of Helsinki<br>abgeschlossen 02/2023</li>
-              <li>HTML, CSS, Javascript for Web Developers, Online Kurs<br>Whiting School of Engineering<br>Johns Hopkins University<br>03/2023 bis 04/2023</li>
-              <li>Java Programming 2, Online Kurs<br>Department of Computer Science<br>University of Helsinki<br>laufend<br>02/2023 bis 06/2023</li>
-              <li>Python Programming, Online Kurs<br>Department of Computer Science<br>University of Helsinki<br>laufend<br>02/2023 bis 06/2023</li>
-              </u>
-              <button type="submit" class="btn3" onclick="closePopup()">Zurück</button>
+<!-- Kontakt -->
+<div id="neuerKontakt">
+  <div class="forScale">
+<section class="contact">
+  <div class="content">
+      <h4>Kontakt aufnehmen</h4>
+  </div>
+  <div class="container3">
+      <div class="contactInfo">
+          <div class="box2">
+              <div class="icon"><i class="fa-sharp fa-solid fa-envelope"></i>
+              </div>
+              <div class="text">
+                  <h6>Thomas@Tannenberg.online</h6>
+              </div>
+          <div class="box2">
+              <div class="icon"><i class="fa-solid fa-mobile"></i></div>
+              <div class="text">
+                  <h7>+49 172 67 18 527</h7>
+              </div>
+          </div>         
       </div>
   </div>
-</div> 
-<!-------------------Float down Info Weiterbildung Ende--------------------->
-<!-------------------Kontankt Anfang--------------------->
-<div id="neuerKontakt">
-    <div class="forScale">
-<section class="contact">
-    <div class="content">
-        <h4>Kontakt aufnehmen</h4>
-    </div>
-    <div class="container3">
-        <div class="contactInfo">
-            <div class="box2">
-                <div class="icon"><i class="fa-sharp fa-solid fa-envelope"></i>
-                </div>
-                <div class="text">
-                    <h6>Thomas@Tannenberg.online</h6>
-                </div>
-            <div class="box2">
-                <div class="icon"><i class="fa-solid fa-mobile"></i></div>
-                <div class="text">
-                    <h7>+49 172 67 18 527</h7>
-                </div>
-            </div>         
-        </div>
-    </div>
 </section>
 </div>
-<a href="Downloads/Thomas Tannenberg Profil 1.pdf" download class="btn btn2">Download Kurzprofil</a>
-</div>
-<!-------------------Kontankt Ende--------------------->
-<!-------------------JavaScript--------------------->
+
+
+
+<!-- Java Skripte -->
+<!-- Menu Sidebar -->
+<script>
+  var sidemeu = document.getElementById(sidemenu);
+
+  function openmenu(){
+    sidemenu.style.left = "0em";
+  }
+  function closemenu(){
+    sidemenu.style.left = "-200em";
+  }
+</script>
+<!-- /Menu Sidebar -->
 <!-------------------Animation Profil Anfang--------------------->
 <script>
-var tablinks = document.getElementsByClassName("tab-links");
-var tabcontent = document.getElementsByClassName("tab-content");
-
-function opentab(tabname){
-  for(tablink of tablinks){
-    tablink.classList.remove("active-link");
+  var tablinks = document.getElementsByClassName("tab-links");
+  var tabcontent = document.getElementsByClassName("tab-content");
+  
+  function opentab(tabname){
+    for(tablink of tablinks){
+      tablink.classList.remove("active-link");
+      }
+    for(tabcont of tabcontent){
+      tabcont.classList.remove("active-tab");
     }
-  for(tabcont of tabcontent){
-    tabcont.classList.remove("active-tab");
-  }
-  event.currentTarget.classList.add("active-link");
-  document.getElementById(tabname).classList.add("active-tab");
-}
-</script>
-<!-------------------Animation Profil Ende--------------------->
-<!-------------------Info Weiterbildung Anfang--------------------->
-<script>
-  let popup = document.getElementById("popup");
-  
-  function openPopup(){
-     popup.classList.add("open-popup");
-  
-  }
-  function closePopup(){
-     popup.classList.remove("open-popup");
-      
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
   }
   </script>
-<!-------------------Info Weiterbildung Ende--------------------->
+  <!-------------------Animation Profil Ende--------------------->
 </body>
 <!-------------------Ende--------------------->
 <footer>
-<div id="kontak">
-    <div class="container">
-        <div class="copyright">
-            <p>copyright &copy; by Thomas Tannenberg<br>created 03/2023 in Visual Studio Code<br>Made with <i class="fa-solid fa-heart"></i></p>
-        </div>
-    </div>
-</div>
-</footer>
-<!-------------------Ende-------------->
+  <div id="kontak">
+      <div class="container">
+          <div class="copyright">
+              <p>copyright &copy; by Thomas Tannenberg<br>created 03/2023 in Visual Studio Code<br>Made with <i class="fa-solid fa-heart"></i></p>
+          </div>
+      </div>
+  </div>
+  </footer>
+  <!-------------------Ende-------------->
 </html>
