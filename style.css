@@ -304,11 +304,11 @@ margin-bottom: 10px;
   transition: 2s;
   }
   .forScale:hover{
-    transform: scale(1.4);
+    transform: scale(1.25);
   }
   .contact .content h4{
     color: white;
-    font-size: 70px;
+    font-size: 2em;
     
   }
   .contact .container3 .contactInfo .box2 .icon{
@@ -316,12 +316,12 @@ margin-bottom: 10px;
     
   }
   .contact .container3 .contactInfo .box2 .text h6{
-  font-size: 40px;
+  font-size: 2em;
   color: white;
   
    }
    .contact .container3 .contactInfo .box2 .text h7{
-    font-size: 40px;
+    font-size: 2em;
     color: white;
     
   } 
